@@ -31,6 +31,7 @@
 		BBFAAAA41B0772C6007562FA /* no_image.png in Resources */ = {isa = PBXBuildFile; fileRef = BBFAAAA31B0772C6007562FA /* no_image.png */; };
 		BBFB081F1B0658FB00F61CB5 /* MJSCBookPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFB081D1B0658FB00F61CB5 /* MJSCBookPDFViewController.m */; };
 		BBFB08201B0658FB00F61CB5 /* MJSCBookPDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBFB081E1B0658FB00F61CB5 /* MJSCBookPDFViewController.xib */; };
+		DCFA6E3567F351F3942E5246 /* libPods-Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7463D2E65E1FBFE859A48 /* libPods-Library.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFA6E3567F351F3942E5246 /* libPods-Library.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +172,6 @@
 				BB6725981B0BC36F002B9670 /* Utils */,
 				BB6725971B0BA436002B9670 /* Protocol */,
 				BBFAAAA21B0772BA007562FA /* Assets */,
-				BB9F731D1B062EE2004B6E3C /* Manager */,
 				BBA81A931B0499E70084CD97 /* Categories */,
 				BBA81A7B1B03B7BA0084CD97 /* View */,
 				BBA81A7A1B03B72C0084CD97 /* Controller */,
@@ -219,13 +220,6 @@
 				BB7FC1CE1AB452300046D195 /* MJSCLibrary.m */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		BB9F731D1B062EE2004B6E3C /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Manager;
 			sourceTree = "<group>";
 		};
 		BBA81A7A1B03B72C0084CD97 /* Controller */ = {

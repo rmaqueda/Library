@@ -13,8 +13,7 @@
 
 @implementation MJSCLibraryCollectionViewCell
 
-
-+(NSString*)cellId {
++(NSString *)cellId {
     return [[self class] description];
 }
 
@@ -26,7 +25,6 @@
     self.container.layer.borderWidth = 1;
     self.container.layer.borderColor = [[MJSCStyles separatotColor] CGColor];
 }
-
 
 -(void)configureWithBook:(MJSCBook *)book {
     self.bookTitle.text = book.title;

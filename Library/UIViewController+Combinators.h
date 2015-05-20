@@ -10,6 +10,6 @@
 
 @interface UIViewController (Combinators)
 
--(UINavigationController *) wrappedInNavigation;
+-(UINavigationController *)wrappedInNavigation;
 
 @end

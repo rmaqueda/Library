@@ -29,8 +29,6 @@
     return self;
 }
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -163,8 +161,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     
     // Start PDF request opperation
     [self.requestOperation start];
-    
-    
 }
 
 

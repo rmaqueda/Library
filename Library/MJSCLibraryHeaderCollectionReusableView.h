@@ -11,6 +11,6 @@
 @interface MJSCLibraryHeaderCollectionReusableView : UICollectionReusableView
 @property (weak, nonatomic) IBOutlet UILabel *sectionTitle;
 
-+(NSString*) headerID;
++(NSString *)headerID;
 
 @end

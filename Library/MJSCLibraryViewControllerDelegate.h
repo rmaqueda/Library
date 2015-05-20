@@ -12,8 +12,6 @@
 
 @optional
 
--(void)libraryViewController:(UIViewController *)libraryVC
-               didSelectBook:(MJSCBook *)book
-                   indexPath:(NSIndexPath *)indexPath;
+-(void)libraryViewController:(UIViewController *)libraryVC didSelectBook:(MJSCBook *)book indexPath:(NSIndexPath *)indexPath;
 
 @end

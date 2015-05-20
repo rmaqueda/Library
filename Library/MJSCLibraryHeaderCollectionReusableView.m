@@ -11,8 +11,7 @@
 
 @implementation MJSCLibraryHeaderCollectionReusableView
 
-
-+(NSString*)headerID {
++(NSString *)headerID {
     
     return [[self class] description];
 }

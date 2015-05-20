@@ -38,8 +38,8 @@
     [self configureView];
 }
 
-
 #pragma mark - LibraryViewControllerDelegate
+
 -(void)libraryViewController:(UIViewController *)libraryVC didSelectBook:(MJSCBook *)book indexPath:(NSIndexPath *)indexPath {
     
     // Save the book selected in user preferences
@@ -69,7 +69,7 @@
 
 #pragma mark - Utils
 
--(void)configureView{
+-(void)configureView {
     
     // Disable default behavior for IOS7
     self.edgesForExtendedLayout = UIRectEdgeNone;

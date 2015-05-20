@@ -94,7 +94,6 @@
     }
 }
 
-
 #pragma mark - Utils
 
 -(void)registerNibs {
@@ -109,7 +108,6 @@
                         withReuseIdentifier:[MJSCLibraryHeaderCollectionReusableView headerID]];
     
 }
-
 
 // Dinamic size of cells
 -(CGSize) collectionView:(UICollectionView *)collectionView

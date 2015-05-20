@@ -72,7 +72,6 @@
     return bookCell;
 }
 
-
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
     return [self.library sectionTitle:section];
@@ -92,7 +91,6 @@
     }
 }
 
-
 #pragma mark - Utils
 -(void)registerNibs {
     [self.tableView registerNib:[UINib nibWithNibName:[MJSCLibraryTableViewCell cellId] bundle:nil]
@@ -103,8 +101,5 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
-
-
-
 
 @end

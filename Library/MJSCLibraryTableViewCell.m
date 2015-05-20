@@ -13,7 +13,6 @@
 
 @implementation MJSCLibraryTableViewCell
 
-
 +(NSString*)cellId {
     
     return [[self class] description];
@@ -33,7 +32,6 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 }
-
 
 -(void)configureWithBook:(MJSCBook *)book {
     self.bookTitle.text = book.title;

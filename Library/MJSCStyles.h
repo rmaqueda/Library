@@ -16,6 +16,7 @@
 +(UIColor *)lightPrimaryColor;
 +(UIColor *)accentColor;
 +(UIColor *)separatotColor;
+
 +(void)configureAppearance;
 
 @end
