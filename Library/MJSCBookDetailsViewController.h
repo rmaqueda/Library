@@ -9,9 +9,9 @@
 @import UIKit;
 @class MJSCBook;
 
-#import "MJSCLibraryViewControllerDelegate.h"
+//#import "MJSCLibraryViewControllerDelegate.h"
 
-@interface MJSCBookDetailsViewController : UIViewController <UISplitViewControllerDelegate, MJSCLibraryViewControllerDelegate>
+@interface MJSCBookDetailsViewController : UIViewController <UISplitViewControllerDelegate>
 
 -(id)initWithBook:(MJSCBook*) book;
 

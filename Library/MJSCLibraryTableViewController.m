@@ -84,11 +84,11 @@
     
     // Get the book
     MJSCBook *book = [self.library bookAtSection:indexPath.section index:indexPath.row];
-    
-    // Set the book and indexpath to the delegate
-    if ([self.delegate respondsToSelector:@selector(libraryViewController:didSelectBook:indexPath:)]) {
-        [self.delegate libraryViewController:self didSelectBook:book indexPath:indexPath];
-    }
+//    
+//    // Set the book and indexpath to the delegate
+//    if ([self.delegate respondsToSelector:@selector(libraryViewController:didSelectBook:indexPath:)]) {
+//        [self.delegate libraryViewController:self didSelectBook:book indexPath:indexPath];
+//    }
 }
 
 #pragma mark - Utils

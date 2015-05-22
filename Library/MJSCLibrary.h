@@ -14,14 +14,10 @@
 @property (nonatomic, copy) NSDictionary *library;
 @property (nonatomic, readonly) NSUInteger sectionCount;
 
+-(id)initWithBooks;
 
--(id) initWithBooks;
-
--(MJSCBook *)bookAtSection:(NSInteger)section
-                      index:(NSUInteger)index;
-
+-(MJSCBook *)bookAtSection:(NSInteger)section index:(NSUInteger)index;
 -(NSUInteger)countBooksAtSection:(NSUInteger)section;
-
 -(NSString *)sectionTitle:(NSUInteger)section;
 
 @end

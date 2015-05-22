@@ -11,7 +11,6 @@
 
 @implementation MJSCLibrary
 
-
 -(id)initWithBooks {
     
     if (self = [super init]) {
@@ -26,18 +25,15 @@
     return [self.library count];
 }
 
-
 -(NSUInteger)countBooksAtSection:(NSUInteger) section {
     return [[self.library objectForKey:[self sectionKeyForSection:section]] count];
 }
-
 
 -(MJSCBook *)bookAtSection:(NSInteger) section
                       index:(NSUInteger) index {
     MJSCBook *book = [[self.library objectForKey:[self sectionKeyForSection:section]] objectAtIndex:index];
     return book;
 }
-
 
 -(NSString *)sectionTitle:(NSUInteger)section {
     return [self sectionKeyForSection:section];
@@ -47,34 +43,23 @@
     return [[self.library allKeys] objectAtIndex:section];
 }
 
-
 -(NSDictionary*)loadBooks {
     
     NSMutableDictionary *library = [[NSMutableDictionary alloc] init];
     
-    // Create the library grouy by categories
     for (MJSCBook *book in [self createBooks]) {
-        
-        // Search the category in the dictionary
         NSMutableArray *array = [library objectForKey:[book category]];
         
-        // The category doesn't existe, create it
         if (!array) {
             array = [[NSMutableArray alloc] init];
         }
         
-        // Add the book to the category
         [array addObject:book];
-        
-        // Add the category with it's books to the library
         [library setObject:array forKeyedSubscript:[book category]];
-        
     }
-    
     
     return [library copy];
 }
-
 
 #pragma mark - Utils
 
@@ -194,12 +179,9 @@
                                               category:@"Go"
                                               imageURL:[NSURL URLWithString:@"http://hackershelf.com/media/cache/fd/6a/fd6a2f610226dffb29fca630b25c1858.jpg"]                                               URL:[NSURL URLWithString:@"http://openmymind.net/assets/go/go.pdf"]];
     
-    
     NSArray *books = @[book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11];
     
     return books;
-    
 }
-
 
 @end

@@ -82,17 +82,17 @@
 }
 
 
-#pragma mark - CollectionView Delegate
-
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // Get the book
-    MJSCBook *book = [self.library bookAtSection:indexPath.section index:indexPath.row];
-    
-    if ([self.delegate respondsToSelector:@selector(libraryViewController:didSelectBook:indexPath:)]) {
-        [self.delegate libraryViewController:self didSelectBook:book indexPath:indexPath];
-    }
-}
+//#pragma mark - CollectionView Delegate
+//
+//-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    // Get the book
+//    MJSCBook *book = [self.library bookAtSection:indexPath.section index:indexPath.row];
+//    
+//    if ([self.delegate respondsToSelector:@selector(libraryViewController:didSelectBook:indexPath:)]) {
+//        [self.delegate libraryViewController:self didSelectBook:book indexPath:indexPath];
+//    }
+//}
 
 #pragma mark - Utils
 

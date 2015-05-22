@@ -48,8 +48,6 @@
 		359FE5AB7756D7C77ABF4C09 /* Pods-Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Library/Pods-Library.release.xcconfig"; sourceTree = "<group>"; };
 		989425D87DD3D17F44C74702 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C55C9D0FE630E79BD3F43D /* Pods-Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Library/Pods-Library.debug.xcconfig"; sourceTree = "<group>"; };
-		BB67258B1B08B4DB002B9670 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
-		BB6725961B0BA09E002B9670 /* MJSCLibraryViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSCLibraryViewControllerDelegate.h; sourceTree = "<group>"; };
 		BB6725991B0BC395002B9670 /* MJSCStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJSCStyles.h; sourceTree = "<group>"; };
 		BB67259A1B0BC395002B9670 /* MJSCStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJSCStyles.m; sourceTree = "<group>"; };
 		BB67259C1B0BC56B002B9670 /* Library.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Library.pch; sourceTree = "<group>"; };
@@ -127,14 +125,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BB6725971B0BA436002B9670 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				BB6725961B0BA09E002B9670 /* MJSCLibraryViewControllerDelegate.h */,
-			);
-			name = Protocol;
-			sourceTree = "<group>";
-		};
 		BB6725981B0BC36F002B9670 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,16 +160,11 @@
 				BB7FC1AA1AB451BA0046D195 /* AppDelegate.h */,
 				BB7FC1AB1AB451BA0046D195 /* AppDelegate.m */,
 				BB6725981B0BC36F002B9670 /* Utils */,
-				BB6725971B0BA436002B9670 /* Protocol */,
-				BBFAAAA21B0772BA007562FA /* Assets */,
 				BBA81A931B0499E70084CD97 /* Categories */,
 				BBA81A7B1B03B7BA0084CD97 /* View */,
 				BBA81A7A1B03B72C0084CD97 /* Controller */,
 				BB7FC1C61AB451EA0046D195 /* Model */,
-				BB7FC1AD1AB451BA0046D195 /* Images.xcassets */,
-				BB7FC1AF1AB451BA0046D195 /* LaunchScreen.xib */,
 				BB7FC1A61AB451BA0046D195 /* Supporting Files */,
-				BB67258B1B08B4DB002B9670 /* Settings.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -187,6 +172,9 @@
 		BB7FC1A61AB451BA0046D195 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB7FC1AD1AB451BA0046D195 /* Images.xcassets */,
+				BB7FC1AF1AB451BA0046D195 /* LaunchScreen.xib */,
+				BBFAAAA21B0772BA007562FA /* Assets */,
 				BB7FC1A71AB451BA0046D195 /* Info.plist */,
 				BB7FC1A81AB451BA0046D195 /* main.m */,
 				BB67259C1B0BC56B002B9670 /* Library.pch */,

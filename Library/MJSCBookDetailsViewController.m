@@ -66,12 +66,12 @@
     }
 }
 
-#pragma mark - MJSCLibraryViewControllerDelegate
-
--(void)libraryViewController:(UIViewController *)libraryVC didSelectBook:(MJSCBook *)book indexPath:(NSIndexPath *)indexPath {
-    self.book = book;
-    [self syncViewWithModel];
-}
+//#pragma mark - MJSCLibraryViewControllerDelegate
+//
+//-(void)libraryViewController:(UIViewController *)libraryVC didSelectBook:(MJSCBook *)book indexPath:(NSIndexPath *)indexPath {
+//    self.book = book;
+//    [self syncViewWithModel];
+//}
 
 #pragma mark - Utils
 

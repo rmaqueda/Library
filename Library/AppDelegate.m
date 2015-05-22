@@ -7,15 +7,18 @@
 //
 
 #import "AppDelegate.h"
-#import "MJSCLibrary.h"
+
 #import "MJSCLibraryTableViewController.h"
 #import "MJSCLibraryCollectionViewController.h"
 #import "MJSCBookDetailsViewController.h"
-#import "MJSCBook.h"
-#import "Settings.h"
-
 #import "MJSCLibraryViewController.h"
+
 #import "UIViewController+Combinators.h"
+
+#import "MJSCLibrary.h"
+//#import "MJSCBook.h"
+
+#define LAST_SELECTED_BOOK_KEY @"LAST_BOOK"
 
 @interface AppDelegate ()
 
@@ -27,13 +30,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [MJSCStyles configureAppearance];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    // Model 
     MJSCLibrary *library = [[MJSCLibrary alloc] initWithBooks];
-    
-    // Screen Type: UItableViewController or UICollectionView for iPhone or UISplitView for iPad
     UIDevice *dev = [UIDevice currentDevice];
 
     if ([dev userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -42,33 +44,25 @@
         [self configureForiPhoneWithModel:library];
     }
     
-    // App aspect
-    [MJSCStyles configureAppearance];
-    
     [self.window makeKeyAndVisible];
     
     return YES;
 }
 
-
 #pragma park -- App Configuration
 
 -(void)configureForiPadWithModel:(MJSCLibrary*)library {
     MJSCBook *book = [self lastBookSelectedInLibrary:library];
-
     MJSCLibraryViewController *libraryVC = [[MJSCLibraryViewController alloc] initWithModel:library];
     MJSCBookDetailsViewController *bookDetailsVC = [[MJSCBookDetailsViewController alloc] initWithBook:book];
     
     UISplitViewController *splitVC = [[UISplitViewController alloc] init];
-    
     splitVC.viewControllers = @[[libraryVC wrappedInNavigation], [bookDetailsVC wrappedInNavigation]];
-    
     [splitVC setDelegate:bookDetailsVC];
     
-    [libraryVC setDelegate:bookDetailsVC];
+    //[libraryVC setDelegate:bookDetailsVC];
     
     self.window.rootViewController = splitVC;
-
 }
 
 -(void)configureForiPhoneWithModel:(MJSCLibrary*)library {

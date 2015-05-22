@@ -10,11 +10,11 @@
 @import Foundation;
 @class MJSCLibrary;
 
-#import "MJSCLibraryViewControllerDelegate.h"
+//#import "MJSCLibraryViewControllerDelegate.h"
 
-@interface MJSCLibraryCollectionViewController : UIViewController<UICollectionViewDataSource>
+@interface MJSCLibraryCollectionViewController : UIViewController <UICollectionViewDataSource>
 
-@property (weak, nonatomic) id<MJSCLibraryViewControllerDelegate>delegate;
+//@property (weak, nonatomic) id<MJSCLibraryViewControllerDelegate>delegate;
 
 -(id)initWithModel:(MJSCLibrary*)library;
 
